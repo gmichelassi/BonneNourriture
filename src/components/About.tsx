@@ -24,9 +24,9 @@ export default function ProjectInfo() {
             </span>
             <Image preview={false} height={200} src={gabs} />
             <span className={css(rules.text)}>
-              Estagiário em engenhario de software, futuro pesquisador e
+              Estagiário em engenharia de software, futuro pesquisador e
               estusiasta de ciência de dados. Amante de gatos, vídeo games,
-              física e técnologa, especialmente aquelas com uma maçã atrás.
+              física e técnologia, especialmente aquelas com uma maçã atrás.
             </span>
           </div>
         </Col>
