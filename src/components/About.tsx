@@ -26,7 +26,7 @@ export default function ProjectInfo() {
             <span className={css(rules.text)}>
               Estagiário em engenharia de software, futuro pesquisador e
               estusiasta de ciência de dados. Amante de gatos, vídeo games,
-              física e técnologia, especialmente aquelas com uma maçã atrás.
+              física e tecnologia, especialmente aquelas com uma maçã atrás.
             </span>
           </div>
         </Col>
