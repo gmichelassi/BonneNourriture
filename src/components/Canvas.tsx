@@ -5,7 +5,7 @@ import { Image } from "antd";
 import { FelaStyle } from "../fela";
 import ContentContainer from "./ContentContainer";
 
-import logo from "../img/logo.png";
+import canvas from "../img/canvas.jpg";
 
 export default function ProjectInfo() {
   const { css } = useFela();
@@ -15,9 +15,8 @@ export default function ProjectInfo() {
       <div className={css(rules.container)}>
         <Image
           className={css(rules.image)}
-          preview={false}
-          src={logo}
-          width={400}
+          src={canvas}
+          width={900}
         />
       </div>
     </ContentContainer>
