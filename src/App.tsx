@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Image, Layout, Menu } from "antd";
 
 import logo from "./img/written-logo.png";
-import background from "./img/restaurant2-bg.jpeg";
+import background from "./img/bg2.jpeg";
 import ProjectInfo from "./components/ProjectInfo";
 import EAP from "./components/EAP";
 import Canvas from "./components/Canvas";
@@ -93,7 +93,7 @@ const rules: FelaStyle = {
     justifyContent: "center",
     alignItems: "center",
     backgroundImage: `url(${background})`,
-    backgroundRepeat: "no-repeat",
+    // backgroundRepeat: "no-repeat",
   },
   footer: {
     textAlign: "center",

@@ -40,7 +40,7 @@ const rules: FelaStyle = {
   container: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     flexDirection: "column",
   },
   image: {

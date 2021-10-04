@@ -12,6 +12,8 @@ export default function ContentContainer({ children }: PropsWithChildren<{}>) {
 
 const rules: FelaStyle = {
   container: {
+    display: "flex",
+    justifyContent: "center",
     backgroundColor: colors.background.light,
     borderRadius: "16px",
     border: "1px solid black",
