@@ -7,6 +7,7 @@ import About from "./components/About";
 import background from "./img/bg2.jpeg";
 import Canvas from "./components/Canvas";
 import colors from "./contants/colors";
+import Abertura from "./components/TermoAbertura";
 import Cronograma from "./components/Cronograma";
 import EAP from "./components/EAP";
 import logo from "./img/written-logo.png";
@@ -68,6 +69,14 @@ function App() {
           </Menu.Item>
           <Menu.Item
             onClick={() => {
+              setContent("abertura");
+            }}
+            className={css(rules.menuItem)}
+          >
+            Termo de Abertura
+          </Menu.Item>
+          <Menu.Item
+            onClick={() => {
               setContent("orcamento");
             }}
             className={css(rules.menuItem)}
@@ -107,6 +116,7 @@ function App() {
         {content === "orcamento" && <Orcamento />}
         {content === "cronograma" && <Cronograma />}
         {content === "rh" && <RecursosHumanos />}
+        {content === "abertura" && <Abertura />}
         {content === "about" && <About />}
       </Content>
       <Footer className={css(rules.footer)}>
