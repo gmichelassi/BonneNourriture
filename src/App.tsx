@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import { Image, Layout, Menu } from "antd";
 
-import logo from "./img/written-logo.png";
-import background from "./img/bg2.jpeg";
-import ProjectInfo from "./components/ProjectInfo";
-import EAP from "./components/EAP";
-import Canvas from "./components/Canvas";
-import About from "./components/About";
-import colors from "./contants/colors";
-import { useFela } from "react-fela";
 import { FelaStyle } from "./fela";
+import { useFela } from "react-fela";
+import About from "./components/About";
+import background from "./img/bg2.jpeg";
+import Canvas from "./components/Canvas";
+import colors from "./contants/colors";
+import Cronograma from "./components/Cronograma";
+import EAP from "./components/EAP";
+import logo from "./img/written-logo.png";
+import Orcamento from "./components/Orcamento";
+import ProjectInfo from "./components/ProjectInfo";
+import RecursosHumanos from "./components/RecursosHumanos";
 
 const { Header, Content, Footer } = Layout;
 
@@ -33,7 +36,7 @@ function App() {
           style={{ cursor: "pointer" }}
         />
         <Menu
-          style={{ marginLeft: "12px" }}
+          style={{ marginLeft: "12px", width: "100%" }}
           className={css(rules.header)}
           theme="dark"
           mode="horizontal"
@@ -65,6 +68,30 @@ function App() {
           </Menu.Item>
           <Menu.Item
             onClick={() => {
+              setContent("orcamento");
+            }}
+            className={css(rules.menuItem)}
+          >
+            Orçamento
+          </Menu.Item>
+          <Menu.Item
+            onClick={() => {
+              setContent("rh");
+            }}
+            className={css(rules.menuItem)}
+          >
+            Recursos Humanos
+          </Menu.Item>
+          <Menu.Item
+            onClick={() => {
+              setContent("cronograma");
+            }}
+            className={css(rules.menuItem)}
+          >
+            Cronograma
+          </Menu.Item>
+          <Menu.Item
+            onClick={() => {
               setContent("about");
             }}
             className={css(rules.menuItem)}
@@ -77,6 +104,9 @@ function App() {
         {content === "home" && <ProjectInfo />}
         {content === "eap" && <EAP />}
         {content === "canvas" && <Canvas />}
+        {content === "orcamento" && <Orcamento />}
+        {content === "cronograma" && <Cronograma />}
+        {content === "rh" && <RecursosHumanos />}
         {content === "about" && <About />}
       </Content>
       <Footer className={css(rules.footer)}>
