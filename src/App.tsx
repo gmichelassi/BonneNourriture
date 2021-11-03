@@ -11,6 +11,7 @@ import Abertura from "./components/TermoAbertura";
 import Cronograma from "./components/Cronograma";
 import EAP from "./components/EAP";
 import logo from "./img/written-logo.png";
+import Qualidade from "./components/Qualidade";
 import Orcamento from "./components/Orcamento";
 import ProjectInfo from "./components/ProjectInfo";
 import RecursosHumanos from "./components/RecursosHumanos";
@@ -93,6 +94,14 @@ function App() {
           </Menu.Item>
           <Menu.Item
             onClick={() => {
+              setContent("qualidade");
+            }}
+            className={css(rules.menuItem)}
+          >
+            Gerenciamento de Qualidade
+          </Menu.Item>
+          <Menu.Item
+            onClick={() => {
               setContent("cronograma");
             }}
             className={css(rules.menuItem)}
@@ -115,6 +124,7 @@ function App() {
         {content === "canvas" && <Canvas />}
         {content === "orcamento" && <Orcamento />}
         {content === "cronograma" && <Cronograma />}
+        {content === "qualidade" && <Qualidade />}
         {content === "rh" && <RecursosHumanos />}
         {content === "abertura" && <Abertura />}
         {content === "about" && <About />}
