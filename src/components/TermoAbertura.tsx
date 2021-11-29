@@ -79,9 +79,8 @@ export default function ProjectInfo() {
           sistema, optando por alternativas de outros sistemas de gerenciamento
           de estoque mais convencionais e mais utilizados; Gerenciamento de
           estoque não funcionar sem auxílio humano, perdendo valor do produto;
-          Cardápios virtuais podem perder a relevância pós-pandemia; Um cardápio
-          sem muitas opções cadastradas não terá a opção de rearranjo dos
-          ingredientes para que não sejam desperdiçados.
+          Cardápios virtuais podem perder a relevância pós-pandemia; A análise
+          mais completa de riscos está descrita em seu documento próprio.
         </p>
 
         <h3 style={{ fontWeight: "bold" }}>Restrições do projeto</h3>

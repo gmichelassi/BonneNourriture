@@ -15,6 +15,11 @@ import Qualidade from "./components/Qualidade";
 import Orcamento from "./components/Orcamento";
 import ProjectInfo from "./components/ProjectInfo";
 import RecursosHumanos from "./components/RecursosHumanos";
+import Riscos from "./components/Riscos";
+import Integracoes from "./components/Integracoes";
+import Interessadas from "./components/Interessadas";
+import Aquisicoes from "./components/Aquisicoes";
+import Comunicacoes from "./components/Comunicacoes";
 
 const { Header, Content, Footer } = Layout;
 
@@ -110,6 +115,46 @@ function App() {
           </Menu.Item>
           <Menu.Item
             onClick={() => {
+              setContent("comunicacoes");
+            }}
+            className={css(rules.menuItem)}
+          >
+            Comunicações
+          </Menu.Item>
+          <Menu.Item
+            onClick={() => {
+              setContent("riscos");
+            }}
+            className={css(rules.menuItem)}
+          >
+            Riscos
+          </Menu.Item>
+          <Menu.Item
+            onClick={() => {
+              setContent("aquisicoes");
+            }}
+            className={css(rules.menuItem)}
+          >
+            Aquisições
+          </Menu.Item>
+          <Menu.Item
+            onClick={() => {
+              setContent("interessadas");
+            }}
+            className={css(rules.menuItem)}
+          >
+            Partes Interessadas
+          </Menu.Item>
+          <Menu.Item
+            onClick={() => {
+              setContent("integracoes");
+            }}
+            className={css(rules.menuItem)}
+          >
+            Integrações
+          </Menu.Item>
+          <Menu.Item
+            onClick={() => {
               setContent("about");
             }}
             className={css(rules.menuItem)}
@@ -128,6 +173,11 @@ function App() {
         {content === "rh" && <RecursosHumanos />}
         {content === "abertura" && <Abertura />}
         {content === "about" && <About />}
+        {content === "riscos" && <Riscos />}
+        {content === "integracoes" && <Integracoes />}
+        {content === "interessadas" && <Interessadas />}
+        {content === "aquisicoes" && <Aquisicoes />}
+        {content === "comunicacoes" && <Comunicacoes />}
       </Content>
       <Footer className={css(rules.footer)}>
         © Copyright - ACH2027 Gestão de Projetos e Tecnologia da Informação
