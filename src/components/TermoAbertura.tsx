@@ -94,6 +94,29 @@ export default function ProjectInfo() {
 
         <h3 style={{ fontWeight: "bold" }}>Recursos e Orçamento do projeto</h3>
         <p>Disponível na aba de orçamento.</p>
+
+        <h3 style={{ fontWeight: "bold" }}>Planos de Comunicação</h3>
+        <p>
+          A comunicação seguirá o modelo iterativo e será simples e clara, de
+          forma tanto formal quanto informal. As chamadas acontecerão de forma
+          recorrente e diária através de chamadas no google meets. Além disso,
+          serão também feitas reuniões recorrentes ao final de cada semana, isso
+          de forma a fazer uma retrospectiva para analisar quais foram os pontos
+          positivos e negativos da semana e o que deve ser melhor trabalhado ou
+          mantido para a próxima semana. Além disso, o gestor também estará
+          acompanhando de perto todas essas reuniões para assegurar que os
+          critérios e linhas de base do projeto estão sendo mantidas.
+        </p>
+
+        <h3 style={{ fontWeight: "bold" }}>
+          Plano de gerenciamento do projeto
+        </h3>
+        <p>Disponível na aba de integrações.</p>
+
+        <h3 style={{ fontWeight: "bold" }}>
+          Plano de gerenciamento de Aquisições
+        </h3>
+        <p>Disponível na aba de aquisições.</p>
       </div>
     </ContentContainer>
   );

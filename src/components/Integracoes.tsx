@@ -1,8 +1,11 @@
 import React from "react";
 import { useFela } from "react-fela";
+import { Image } from "antd";
 
 import { FelaStyle } from "../fela";
 import ContentContainer from "./ContentContainer";
+
+import ciclovida from "../img/ciclovida.png";
 
 export default function Integracoes() {
   const { css } = useFela();
@@ -10,6 +13,9 @@ export default function Integracoes() {
   return (
     <ContentContainer>
       <div className={css(rules.container)}>
+        <h3 style={{ fontWeight: "bold" }}>Ciclo de Vida do Projeto</h3>
+        <Image className={css(rules.image)} src={ciclovida} width={900} />
+
         <h3 style={{ fontWeight: "bold" }}>Diretrizes do projeto</h3>
         <ul>
           <li>
