@@ -34,7 +34,7 @@ export default function ProjectInfo() {
 
         <span className={css(rules.text)}>
           PITCH:{" "}
-          <a href="https://drive.google.com/file/d/1jHtx9RtIbADTMYVZn4vdKGGGlt0SQPF0/view?usp=sharing">
+          <a href="https://drive.google.com/file/d/1I6WReYnUkRO4YeHPTm6xOcslVoNundLd/view?usp=sharing">
             Disponível via Google Drive
           </a>
         </span>
