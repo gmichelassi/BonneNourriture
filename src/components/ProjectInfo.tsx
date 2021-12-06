@@ -31,6 +31,13 @@ export default function ProjectInfo() {
           acessar o cardápio e verificar os itens disponíveis e estes serão
           computados pelo garçom responsável pelo atendimento em seu aplicativo.
         </span>
+
+        <span className={css(rules.text)}>
+          PITCH:{" "}
+          <a href="https://drive.google.com/file/d/1VA9uW4KxZ_BkcTcZy6m7b-I24TX6eRTa/view?usp=sharing">
+            Disponível via Google Drive
+          </a>
+        </span>
       </div>
     </ContentContainer>
   );
